@@ -1,0 +1,25 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "weather cli app",
+  "main": "index.js",
+  "bin": "./index.js",
+  "private" : true,
+  "engines": {
+    "node": ">14"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "weather"
+  ],
+  "author": "Vadim Getta",
+  "license": "ISC",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
