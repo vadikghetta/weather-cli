@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "weather cli app",
   "main": "index.js",
-  "bin": "./index.js",
-  "private" : true,
+  "type": "module",
+  "bin": {
+    "weather" : "weather.js"
+  },
+  "private": true,
   "engines": {
     "node": ">14"
   },
@@ -21,5 +24,8 @@
   "repository": {
     "type": "git",
     "url": ""
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
   }
 }
