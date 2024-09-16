@@ -5,8 +5,7 @@ import axios from "axios";
 
 const getWeather = async (city) =>
 {
-    const token = await getKey(TOKEN_DICTIONARY.token)
-    console.log(token)
+    const token = await getKey(TOKEN_DICTIONARY.token);
     if (!token) {
         throw new Error("Не задан ключ апи задайте его через команду -t")
     }

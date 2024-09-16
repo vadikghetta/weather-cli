@@ -19,6 +19,24 @@ const saveToken = async (token = "") =>
     }
 }
 
+const getForcast = async () =>
+{
+    try {
+
+        const weather = await getWeather("dzhoy")
+        console.log(weather)
+    } catch (e) {
+        if (e?.response?.status === 404) {
+            printError("Не верно указан город")
+        } else if (e?.response?.status === 401) {
+            printError("Не верно указан токен")
+        } else {
+            printError(e.message)
+
+        }
+    }
+}
+
 
 const initCli = () =>
 {
@@ -33,7 +51,8 @@ const initCli = () =>
     if (args.t) {
         return saveToken(args.t)        //Сохранить токен
     }
-    getWeather("moscow")
+    getForcast()
+    // getWeather("moscow")
     //Вывести погоду
 };
 
