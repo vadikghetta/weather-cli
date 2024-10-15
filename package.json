@@ -1,5 +1,5 @@
 {
-  "name": "weather-cli",
+  "name": "weather-cli-vadim-learn-nodejs",
   "version": "1.0.0",
   "description": "weather cli app",
   "main": "index.js",
@@ -7,11 +7,12 @@
   "bin": {
     "weather": "weather.js"
   },
-  "private": true,
+  "private": false,
   "engines": {
     "node": ">14"
   },
   "scripts": {
+    "start" : "node weather.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
